@@ -1,0 +1,148 @@
+*{
+    padding:0;
+    margin: 0;
+}
+nav{
+    width:100%;
+    display:block;
+    background-color: rgb(247, 247, 252);
+    line-height: 2;
+    margin-bottom: 2vw;
+}   
+.logo{
+    width:30%;
+    font-family: cursive;
+    font-size: 2vw;
+    display: inline;
+    padding-left:7vw;
+    margin-right: 26vw;
+}
+#logo{
+    color:rgb(8, 22, 102);
+    font-weight: bold;
+}
+.links{
+    width:40%;
+    display: inline;
+    margin:0 5vw;
+}
+.links ul{
+    display: inline;
+    list-style-type: none;
+}
+.links ul li {
+    display: inline;
+
+}
+.links ul li a{
+    text-decoration: none;
+    font-size: 1.9vw;
+    padding:1.7vw;
+    cursor: pointer;
+    display: inline;
+    animation-name: slide2;
+    color: rgb(5, 5, 235);
+}
+
+.links ul li a:hover{
+color:rgb(3, 3, 70);
+}
+.slider-wrapper {
+    font-size: 40px;
+    color:#aaa;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider{
+    height: 50px;
+    padding-left:15px;
+  }
+  .slider-text1 {
+    background: lightgreen;
+    animation: slide 5s linear infinite;
+  }
+  .slider-text2 {
+    background: skyblue;
+  }
+  .slider-text3 {
+    background: lightcoral;
+  }
+  .slider div {
+    color:#fff;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .slider{
+    height: 50px;
+    padding-left:15px;
+    overflow: hidden;  
+  }
+  @keyframes slide {
+    0% {margin-top:-300px;}
+    5% {margin-top:-200px;}  
+    33% {margin-top:-200px;}
+    38% {margin-top:-100px;} 
+    66% {margin-top:-100px;}
+    71% {margin-top:0px;} 
+    100% {margin-top:0px;}
+  }
+
+  body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+body {
+    font-family: "Arial", sans-serif;
+}
+section {
+    text-align: center;
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+}
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+line-height: 100px;
+    font-size: 60px;
+}
+.clock {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #090e0f;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+   
+
+
+}
